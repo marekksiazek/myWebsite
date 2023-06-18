@@ -1,0 +1,438 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    background-image: url(assets/Animated\ Shape.svg);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    width: 80%; 
+    color: #d3d3d3;
+}
+
+@media only screen and (min-width:901px){
+
+    .menuPhone {
+        visibility: hidden;
+    }
+
+    #navigation {
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+    }
+
+    .logoPlace {
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    .menuPlace {
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    ul {
+        list-style: none;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        padding-left: 5%;
+    }
+
+    li a {
+        font-size: 1rem;
+        display: block;
+        color: #d3d3d3;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    li a:hover {
+        border-bottom: #d3d3d3 solid 2px;
+        border-top: #d3d3d3 solid 2px;
+    }
+
+    .intro {
+        display: flex;
+        width: 100%;
+    }
+    .greetings {
+        color: #d3d3d3;
+        width: 50%;
+        padding-top: 25%;
+    }
+
+    .hello {
+        font-size: 32px;
+    }
+
+    .inner {
+        font-size: 24px;
+    }
+
+    .greetings h5 {
+        letter-spacing: 2px;
+    }
+
+    .profilePicture {
+        width: 50%;
+    }
+
+    .profilePhoto {
+        padding-left: 5%;
+        padding-right: 5%;
+        filter: drop-shadow(0px 0px 50px #07cc98);
+        opacity: 0.9;
+        max-width: 70%;
+    }
+
+    .offer {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding: 1% 0 1% 0;
+        border-radius: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .sectionTitle {
+        margin: 10% auto 0 auto;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        line-height: 4rem;
+        color: #07cc98;
+        max-width: auto;
+        border: #07cc98 solid 6px;
+        box-shadow: #07cc98 0 0 10px;
+        
+    }
+
+
+    .offerItem {
+        margin: 5% auto 5% auto;
+        text-align: center;
+        max-width: 40%;
+        height: auto;
+        min-height: 30vh;
+        background-color: #393e46;
+        opacity: 0.9;
+        align-self: baseline;
+        border-radius: 20% 5%;
+        filter: drop-shadow(0px 0px 35px #393e46);
+    }
+
+    .offerItem h3 {
+        padding: 2%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .offerItem p {
+        padding: 3%;
+        text-align: center;
+    }
+
+    .offerItem:hover {
+        opacity: 1;
+        color: #ffffff;
+    }
+
+    #sectionFAQ {
+        width: 100%;
+    }
+    .faqItem {
+        margin: 4% auto 4% auto;
+        text-align: left;
+    }
+
+    .faq {
+        max-width: 100%;
+        margin: 5% auto 0 auto;
+
+    }
+
+    .faq .contentBx {
+        text-align: left;
+        max-width: 70%;
+        max-height: 80%;
+        position: relative;
+        padding: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .faq .contentBx .label {
+        position: relative;
+        padding: 1%;
+        font-size: 1.2rem;
+        background-color: rgba(7, 204, 152, 0.6);
+        cursor: pointer;
+    }
+
+    .faq .contentBx .label::before {
+        content: "+";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6%;
+        font-size: 2.0rem;
+    }
+
+    .faq .contentBx.active .label::before {
+        content: "-";
+    }
+
+    .faq .contentBx .content {
+        position: relative;
+        background-color: #393e46;
+        opacity: 0.9;
+        height: 0;
+        overflow-y: hidden;
+    }
+
+    .faq .contentBx.active .content {
+        height: max-content;
+        padding: 1%;
+        border-bottom: #07cc98 solid 2px;
+    }
+
+    .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .technologiesItem {
+        flex-basis: 20%;
+        align-self: baseline;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .sectionTechnologies {
+        padding-bottom: 80vh;
+    }
+    .technologiesItem img {
+        max-height: 16vh;
+        width: auto;
+        margin-bottom: 4%;
+    }
+
+    .contentSection {
+        margin: 3% auto 3% auto;
+        padding: 5%;
+        border: #07cc98 outset 5px;
+        box-shadow: rgba(119, 242, 199, 1.0) 15px 15px 15px;
+        text-align: center;
+        min-height: 40vh;
+        animation: neonShadow 8s linear 0s infinite;
+    }
+
+    @keyframes neonShadow {
+        0% {box-shadow: rgba(119, 242, 199, 1) 15px 15px 15px;}
+        50% {box-shadow: rgba(119, 242, 199, 0.0) 15px 15px 15px;}
+        100% {box-shadow: rgba(119, 242, 199, 1) 15px 15px 15px;}
+    }
+
+    .contentSection p {
+        padding-top: 4%;
+    }
+
+    .footer {
+        position: relative;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .footerLeftSide {
+        margin-top: 5%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #77f2c7;
+        width: 50vh;
+        height: 50vh;
+        opacity: 1;
+    }
+
+    .footerRightSide {
+        margin-top: 5%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #07cc98;
+        width: 80%;
+        height: 20vh;
+        opacity: 0.9;
+        z-index: -1;
+    }
+
+
+    .footerRightSide p {
+        padding-right: 5%;
+        font-size: 1rem;
+        color: #000;
+        text-align: right;
+        opacity: 1;
+        letter-spacing: 1px;
+    }
+
+
+    .footerRightSide .phone img {
+        padding-left: 2%;
+        height: 1rem;
+    }
+
+    .footerRightSide .email img {
+        padding-left: 2%;
+        height: 1rem;
+    }
+
+    .footerRightSide .time img {
+        padding-left: 2%;
+        height: 1rem;
+    }
+
+    .footerText {
+        color: #222831;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 10%;
+    }
+
+
+    .container {
+        margin: 0 auto 0 auto;
+        width: 40vh;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 3px;
+        border: 1px solid #77f2c7;
+        background-color: #77f2c7;
+    }
+    
+    .container form .descr {
+        padding-top: 10%;
+        margin-bottom: 10%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #222831;
+        text-align: center;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input, textarea {
+        width: 30vh;
+        margin-bottom: 10%;
+        position: relative;
+    }
+    
+    .input input, textarea {
+        font-size: 80%;
+        outline: none;
+        color: #222831;
+        border: none;
+        border-bottom: 2px solid #222831;
+        background: transparent;
+        border-radius: none;
+        width: 100%;
+        resize: none;
+    }
+    
+    .input label {
+        font-size: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #222831;
+        margin-left: 0.1em;
+        pointer-events: none;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+    }
+    
+    .input :is(input:focus, input:valid)~label {
+        transform: translateY(-70%) scale(.5);
+        margin: 0em;
+        padding: 0.4em;
+        background: transparent;
+    }
+    
+    .input textarea:focus ~ label,
+    .input textarea:valid ~ label {
+        transform: translateY(-70%) scale(.5);
+        margin: 0em;
+        padding: 0.4em;
+        background: transparent;
+    }
+    
+    .form button {
+        color: #222831;
+        font-size: 15px;
+        align-self: flex-start;
+        padding: 0.6em;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 50px;
+        background: transparent;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .form button:before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #77f2c7;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .form button:hover:before {
+        opacity: 0.2;
+    }
+    
+    .form button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+}
+  
+ 
