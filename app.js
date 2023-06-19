@@ -1,4 +1,7 @@
 const sectionFAQ = document.getElementsByClassName('contentBx');
+var getValueName = document.getElementById("name");
+var getValueEmail = document.getElementById("email");
+var getValueMsg = document.getElementById("message");
 
 for (i=0; i <sectionFAQ.length; i++){
     sectionFAQ[i].addEventListener("click", function() {
@@ -15,17 +18,17 @@ window.onload = function() {
         emailjs.sendForm('service_ux08wsp', 'contact_form', this)
             .then(function() {
                 console.log('SUCCESS!');
+                clearForm();
+                window.alert("Wiadomość została wysłana!")
+
             }, function(error) {
                 console.log('FAILED...', error);
+                window.alert("Ups... z jakiegoś powodu nie udało się wysłać wiadomości")
             });
     });
 }
 
-function clearForm() {
-    var getValueName = document.getElementById("name");
-    var getValueEmail = document.getElementById("email");
-    var getValueMsg = document.getElementById("message");
-
+function clearForm() {  
     if (getValueName.value !="") {
         getValueName.value = ""
     
